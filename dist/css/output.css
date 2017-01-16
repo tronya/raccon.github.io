@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 10px;
+  line-height: 1;
+  background: grey; }
+
+.input_field {
+  box-sizing: border-box;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding: 10px;
+  width: 100%; }

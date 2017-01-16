@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ES6 Playground</title>
+    <link href="dist/css/output.css" rel="stylesheet">
+    <script src="https://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <input class="input_field" placeholder="Insert some text..." value="" id="input" onkeydown="keyPress(event.key)" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            VK.init(function () {
+                apiId: 5200640
+            }, function () {
+                console.log("some problems");
+            }, '5.62');
+            VK.api("audio.get", {}, function (data) {
+                alert("Post ID:" + data.response.post_id);
+            });
+        });
+    </script>
+    <script src="dist/script.js"></script>
+    <!--
+    VpnqvnYrwjcBSJvLvYRu
+    	5200640
+-->
+</body>
+
+</html>

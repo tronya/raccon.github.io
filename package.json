@@ -1,0 +1,20 @@
+{
+    "name": "ES6"
+    , "version": "1.0.0"
+    , "description": ""
+    , "main": "index.js"
+    , "scripts": {
+        "me": "babel src -d dist --presets es2015 -w"
+        , "dev": "webpack-dev-server --inline --hot --progress --watch-poll --open"
+        , "styles": "npm-sass ./src/styles/style.scss > ./dist/css/output.css"
+    }
+    , "keywords": []
+    , "author": ""
+    , "license": "ISC"
+    , "devDependencies": {
+        "babel-cli": "^6.18.0"
+        , "babel-core": "^6.21.0"
+        , "babel-preset-es2015": "^6.18.0"
+        , "webpack-dev-server": "^1.16.2"
+    }
+}
